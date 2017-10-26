@@ -1,0 +1,17 @@
+version: "2"
+
+networks:
+  main_traffic:
+
+services:
+  web:
+    build: ./app
+    ports:
+      - "4000:4000"
+    networks:
+      main_traffic:
+        aliases:
+          - graphql
+    volumes:
+      - ./app/src:/app/src
+    container_name: graphql_api
