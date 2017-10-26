@@ -12,7 +12,7 @@ A GraphQL API built with Express ready to work
 
 ``docker-compose up --build``
 
-* Open the `http://localhost:4000` URL in your preferred browser and type:
+* When finished open the `http://localhost:4000/graphql` URL in your preferred browser and type:
 
 ```json
 {
