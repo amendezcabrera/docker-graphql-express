@@ -43,14 +43,10 @@ var schema = buildSchema(`
 // The root provides a resolver function for each API endpoint
 var root = {
     hello: () => {
-        return 'Hola mundo!';
+        return 'Hello world!!';
     },
-    /*book: (id) => {
-       // var book = Book.entries[parseInt(id)];
-        return "ID seleccionado: ";
-    },*/
     book: function ({id}) {
-        return "Devolver libro con ID: " + id;
+        return "Return ID " + id + " book";
     },
 };
 
